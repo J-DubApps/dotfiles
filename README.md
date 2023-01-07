@@ -1,2 +1,6 @@
 # dotfiles
-🛠 Dotfiles for Visual Studio Code
+🛠 Dotfiles for various apps I use including:
+
+VSCode
+vim
+neovim
