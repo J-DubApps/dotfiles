@@ -1,0 +1,8 @@
+require('jwest.gitsigns')
+require('jwest.lualine')
+require('jwest.lsp')
+require('jwest.telescope')
+require('jwest.treesitter')
+require('jwest.tokyonight')
+require('jwest.nvim-tree')
+require('jwest.bufferline')
