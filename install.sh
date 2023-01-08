@@ -40,3 +40,11 @@ nvim --headless +PlugInstall +qall
 
 # Use kitty terminal on MacOS
 [ `uname -s` = 'Darwin' ] && stow kitty
+
+
+ln -s ~/.dotfiles/.vimrc ~/.vimrc
+ln -s ~/.dotfiles/.viminfo ~/.viminfo
+ln -s ~/.dotfiles/.bashrc ~/.bashrc
+ln -s ~/.dotfiles/.zshrc ~/.zshrc
+ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/.gitignore_global ~/.gitignore_global
