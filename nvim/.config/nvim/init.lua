@@ -1,4 +1,9 @@
-require('jwest.gitsigns')
+	-- load seperate config files
+require('settings')    -- lua/settings.lua
+require('maps')        -- lua/maps.lua
+require('statusline')  -- lua/statusline.lua
+require('plugins')     -- lua/plugins.lua
+require('jwest.gitsigns') -- lua/jwest/gitsigns.lua
 require('jwest.lualine')
 require('jwest.lsp')
 require('jwest.telescope')
