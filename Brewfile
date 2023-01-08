@@ -1,8 +1,13 @@
 if OS.mac?
     # taps
+    tap "homebrew/bundle"
     tap "homebrew/cask"
+    tap "homebrew/core"
     tap "homebrew/cask-fonts"
 
+    # Ruby environment tool
+    brew "chruby"
+    
     brew "noti" # utility to display notifications from scripts
     brew "trash" # rm, but put in the trash rather than completely delete
 
@@ -10,6 +15,17 @@ if OS.mac?
     cask "kitty" # a better terminal emulator
     cask "imageoptim" # a tool to optimize images
 	cask "1password/tap/1password-cli"
+    # GitHub command-line tool
+    brew "gh"
+    # Platform built on V8 to build network applications
+    brew "node"
+    # Cryptography and SSL/TLS Toolkit
+    brew "openssl@3"
+
+    # Install Ruby, JRuby, Rubinius, TruffleRuby, or mruby
+    brew "ruby-install"
+    # Command-line shell and scripting language
+    cask "powershell"
 
     # Fonts
     cask "font-fira-code"
@@ -17,7 +33,10 @@ if OS.mac?
     cask "font-cascadia-mono"
     cask "font-3270-nerd-font"
 elsif OS.linux?
+    # Command-line shell and scripting language
+    brew "powershell"
     brew "xclip" # access to clipboard (similar to pbcopy/pbpaste)
+    brew "zsh" # zsh (latest)
 end
 
 tap "homebrew/bundle"
@@ -39,6 +58,11 @@ brew "htop" # a top alternative
 brew "jq" # work with JSON files in shell scripts
 brew "neofetch" # pretty system info
 brew "neovim" # A better vim
+# Python dependency management tool
+brew "pipenv"
+# Python version management
+brew "pyenv"
+# Interpreted, interactive, object-oriented programming language
 brew "python" # python (latst)
 brew "ripgrep" # very fast file searcher
 brew "fnm" # Fast Node version manager
@@ -49,4 +73,4 @@ brew "vim" # Vim (latest)
 brew "wdiff" # word differences in text files
 brew "wget" # internet file retriever
 brew "z" # switch between most used directories
-brew "zsh" # zsh (latest)
+
