@@ -1,7 +1,7 @@
 # dotfiles
 🛠 Dotfiles for various apps I use including:
 
-VSCode 
-vim 
-neovim 
-zsh
+VSCode  
+vim   
+neovim  
+zsh   
