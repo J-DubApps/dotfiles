@@ -17,6 +17,8 @@ fi
 if [ "$(uname)" == "Darwin" ]; then
     # Running on Mac, so run the Mac-specific command
     xcode-select --install
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    brew bundle install
 else
     # Running on Linux, so do these other things instead
     :
