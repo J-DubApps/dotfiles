@@ -1,5 +1,18 @@
 #!/bin/bash
 
+
+# Check if running in bash shell vs zsh shell
+if [ "$SHELL" == "/bin/bash" ]; then
+  echo "Running in bash shell"
+# Check if running in zsh shell
+elif [ "$SHELL" == "/bin/zsh" ]; then
+  echo "Running in zsh shell"
+# Otherwise, unknown shell
+else
+  # echo "Error: Unknown shell"
+fi
+
+
 # Detect if running on Mac or Linux
 if [ "$(uname)" == "Darwin" ]; then
     # Running on Mac, so run the Mac-specific command
@@ -52,6 +65,8 @@ fi
 # Use kitty terminal on MacOS
 [ `uname -s` = 'Darwin' ] && stow kitty
 
+
+# Create symlinksß
 
 ln -s ~/.dotfiles/.vimrc ~/.vimrc
 ln -s ~/.dotfiles/.viminfo ~/.viminfo
