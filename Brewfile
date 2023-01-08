@@ -15,6 +15,7 @@ if OS.mac?
     cask "kitty" # a better terminal emulator
     cask "imageoptim" # a tool to optimize images
 	cask "1password/tap/1password-cli"
+    cask 'zoom'
     # GitHub command-line tool
     brew "gh"
     # Platform built on V8 to build network applications
