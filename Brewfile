@@ -73,4 +73,7 @@ brew "vim" # Vim (latest)
 brew "wdiff" # word differences in text files
 brew "wget" # internet file retriever
 brew "z" # switch between most used directories
+cask "google-chrome"
+cask "firefox"
+cask "visual-studio-code"
 
