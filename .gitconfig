@@ -5,7 +5,7 @@
 	process = git-lfs filter-process
 [user]
 	name = Julian West
-	email = west.julian@me.com
+	email = jdub.writes.code@gmail.com
 [core]
 	excludesfile = /Users/julianwest/.gitignore_global
 [difftool "sourcetree"]
