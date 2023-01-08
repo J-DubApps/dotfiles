@@ -8,6 +8,7 @@
 	email = jdub.writes.code@gmail.com
 [core]
 	excludesfile = /Users/julianwest/.gitignore_global
+	editor = code --wait
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
