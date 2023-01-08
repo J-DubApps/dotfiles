@@ -65,4 +65,4 @@ then
 	eval "$(starship init bash)"
 fi
 
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"
