@@ -8,7 +8,11 @@
         "*": true,
         "yaml": false,
         "plaintext": true,
-        "markdown": true
+        "markdown": true,
+        "javascript": true,
+        "powershell": true,
+        "python": true,
+        "javascriptreact": true
     },
     "files.exclude": {
 		".git": true,
