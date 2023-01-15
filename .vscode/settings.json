@@ -56,8 +56,23 @@
   "terminal.integrated.defaultProfile.linux": "zsh",
   "terminal.integrated.fontSize": 14,
 
+  // Extensions
+  "extensions.autoCheckUpdates": true,
+
+  // Material Icon Theme
+  "material-icon-theme.folders.theme": "specific",
+  "material-icon-theme.folders.color": "#90a4ae",
+
   // Emmet
-  "emmet.preferences": {},
+  "emmet.preferences": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+    "javascriptreact": "javascriptreact",
+    "mardkown": "html"
+  },
+
+  // Tabnine
+  "tabnine.experimentalAutoImports": true,
 
   // Git & GitHub
   "github.copilot.enable": {
@@ -70,6 +85,66 @@
     "python": true,
     "javascriptreact": true
   },
+
+  // Eslint
+  "eslint.validate": ["javascript", "typescriptreact", "javascriptreact"],
+
+  // Languages
+  "[javascript]": {
+    "editor.autoClosingBrackets": "always",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[typescript]": {
+    "editor.autoClosingBrackets": "always",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[javascriptreact]": {
+    "editor.autoClosingBrackets": "always",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[typescriptreact]": {
+    "editor.autoClosingBrackets": "always",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+
+  // Tailwind
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "javascript"
+  },
+
+  // HTML CSS Class Completion
+  "html-css-class-completion.enableEmmetSupport": true,
+
+  // Discord Presence
+  "discord.detailsIdling": "👀 Being productive...",
+  "discord.detailsEditing": "☕ {file_name} com {file_size}",
+  "discord.largeImageIdling": "⏲️ Código, Café e Pomodoro",
+  "discord.lowerDetailsDebugging": "🐛 Debugging: {git_branch}",
+  "discord.lowerDetailsEditing": "📦 Projeto: {workspace}",
+  "discord.lowerDetailsIdling": "☕ Hora do café",
+  "discord.lowerDetailsNoWorkspaceFound": "{file_size}",
+
+  // Google Translate
+  "vscodeGoogleTranslate.preferredLanguage": "English",
+
+  // Material Icon Theme
+  "material-icon-theme.folders.associations": {
+    "jest": "test"
+  },
+
+  "npm.keybindingsChangedWarningShown": true,
+
   // VS Code automatically highlights selected words.
   // "vim.hlsearch": false,
   "vim.timeout": 200,
