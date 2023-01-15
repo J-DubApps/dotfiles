@@ -2,7 +2,18 @@
   // VSCode
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.zoomLevel": 0,
+  "window.titleBarStyle": "native",
+  "window.nativeTabs": true,
+  "window.restoreWindows": "all",
+  //"window.autoDetectColorScheme": true,
   "glassit.alpha": 241,
+  "search.globalFindClipboard": false,
+  "search.smartCase": true,
+  "debug.inlineValues": "on",
+  "debug.allowBreakpointsEverywhere": true,
+  "debug.autoExpandLazyVariables": true,
+  "debug.showBreakpointsInOverviewRuler": true,
+  "breadcrumbs.enabled": true,
 
   // Security
   "security.workspace.trust.untrustedFiles": "open",
@@ -12,17 +23,24 @@
   "explorer.compactFolders": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-
-  // Workbench
-  //"workbench.colorTheme": "Dracula",
-  "workbench.colorTheme": "Default Dark+",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.tree.indent": 20,
   "workbench.sideBar.location": "left",
   "workbench.editor.labelFormat": "short", // <== file name format
   "workbench.editor.untitled.hint": "hidden",
+  "workbench.editor.tabCloseButton": "left",
+  "workbench.startupEditor": "none",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.closeOnFileDelete": false,
+  "workbench.editor.revealIfOpen": true,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.fontAliasing": "auto",
 
   // Files
+  "files.autoSave": "afterDelay",
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
   "files.exclude": {
     ".git": true,
     ".build": true,
@@ -42,23 +60,44 @@
   // Editor
   "editor.fontSize": 15,
   "editor.tabSize": 2,
-  "editor.fontFamily": "Fira Code Retina",
+  "editor.tabCompletion": "on",
+  "editor.fontFamily": "'SF Mono', Menlo, Monaco, Consolas, monospace,Fira Code Retina",
+  "editor.fontWeight": "500",
   "editor.fontLigatures": true,
+  "editor.guides.indentation": true,
+  "editor.glyphMargin": false,
   "editor.cursorStyle": "line",
   "editor.cursorBlinking": "smooth",
   "editor.stickyScroll.enabled": true,
   "editor.formatOnSave": true,
   "editor.formatOnPaste": false,
+  "editor.formatOnType": true,
+  "editor.find.globalFindClipboard": true,
   "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderLineHighlight": "none",
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
   "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 118,
   "editor.inlineSuggest.enabled": true,
   "editor.rulers": [120, 120], // <== editor Guidelines
+  //"editor.rulers": [80, 118],
   "editor.suggestSelection": "first",
+  //"editor.suggestSelection": "recentlyUsedByPrefix",
   "editor.parameterHints.enabled": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.renderControlCharacters": true,
+  "editor.scrollBeyondLastLine": false,
+  "editor.showUnused": false,
   "editor.semanticHighlighting.enabled": false,
+  "editor.selectionHighlight": false,
+  "editor.suggest.localityBonus": true,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.organizeImports": true
@@ -71,9 +110,20 @@
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.showExitAlert": false,
   //"terminal.integrated.gpuAcceleration": "off",
+  "terminal.integrated.tabs.enabled": true,
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
   },
+  "terminal.integrated.profiles.linux": {
+    "zsh": {
+      "path": "zsh"
+    }
+  },
+  //"terminal.integrated.profiles.osx": {
+  //    "zsh": {
+  //        "path": "zsh"
+  //    }
+  //},
 
   // Extensions
   "extensions.autoCheckUpdates": true,
@@ -90,6 +140,14 @@
   "tabnine.experimentalAutoImports": true,
 
   // Git & GitHub
+  "git.promptToSaveFilesBeforeCommit": "always",
+  //"git.enableCommitSigning": true,
+  "git.fetchOnPull": true,
+  "git.openDiffOnClick": false,
+  "git.enableSmartCommit": true,
+  "git.allowForcePush": false,
+  "git.autofetch": true,
+  "githubPullRequests.pullBranch": "never",
   "github.copilot.enable": {
     "*": true,
     "yaml": false,
@@ -105,9 +163,7 @@
   "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
-  "git.enableSmartCommit": true,
-  "git.allowForcePush": false,
-  "git.autofetch": true,
+  "gitlens.blame.ignoreWhitespace": true,
 
   // Eslint
   "eslint.validate": ["javascript", "typescriptreact", "javascriptreact"],

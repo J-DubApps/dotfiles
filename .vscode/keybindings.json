@@ -1,4 +1,4 @@
-	[
+[
   // Move to the previous/next editor.
   {
     "key": "cmd+k",
@@ -96,19 +96,19 @@
     "key": "cmd+w",
     "command": "workbench.action.terminal.kill",
     "when": "terminalFocus"
-  },
+  }
 
   // Ensure that tab button works in vim.
-  {
-    "key": "tab",
-    "command": "tab",
-    "when": "editorTextFocus && !editorTabMovesFocus"
-  },
-  {
-    "key": "shift+tab",
-    "command": "outdent",
-    "when": "editorTextFocus && !editorTabMovesFocus"
-  }
+  //{
+  //  "key": "tab",
+  //  "command": "tab",
+  //  "when": "editorTextFocus && !editorTabMovesFocus"
+  //},
+  //{
+  //  "key": "shift+tab",
+  //  "command": "outdent",
+  //  "when": "editorTextFocus && !editorTabMovesFocus"
+  //}
 
   // TODO: Traverse search results with vim
   // {
