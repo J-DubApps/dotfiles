@@ -1,0 +1,60 @@
+{
+
+    "workbench.colorTheme": "Default Dark+",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.inlineSuggest.enabled": true,
+    "terminal.integrated.defaultProfile.osx": "bash",
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": true,
+        "markdown": true
+    },
+    "files.exclude": {
+		".git": true,
+		".build": true,
+		".profile-oss": true,
+		"**/.DS_Store": true,
+		"build/**/*.js": {
+			"when": "$(basename).ts"
+		}
+    },
+    "emmet.preferences": {
+    
+    },
+       // VS Code automatically highlights selected words.
+       // "vim.hlsearch": false,
+    "vim.timeout": 200,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": ["k", "j"],
+        "after": ["<Esc>"]
+      }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+      {
+        "before": ["<leader>", "d"],
+        "after": ["d", "d"]
+      },
+      {
+        "before": ["<C-n>"],
+        "commands": [":nohl"]
+      },
+      {
+        "before": ["K"],
+        "commands": ["lineBreakInsert"],
+        "silent": true
+      }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+      "<C-a>": false,
+      "<C-f>": false
+    },
+    "explorer.confirmDragAndDrop": false
+}
