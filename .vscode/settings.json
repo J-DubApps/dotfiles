@@ -1,9 +1,6 @@
 {
- // VSCode
+  // VSCode
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
- 
-    "editor.inlineSuggest.enabled": true,
-    "terminal.integrated.defaultProfile.osx": "bash",
 
   // Security
   "security.workspace.trust.untrustedFiles": "open",
@@ -15,70 +12,96 @@
 
   // Workbench
   //"workbench.colorTheme": "Evondev Dracula Darker Contrast",
-    "workbench.colorTheme": "Default Dark+",
+  "workbench.colorTheme": "Default Dark+",
   //"workbench.iconTheme": "material-icon-theme",
   "workbench.tree.indent": 20,
 
-   // Git & GitHub
-    "github.copilot.enable": {
-        "*": true,
-        "yaml": false,
-        "plaintext": true,
-        "markdown": true,
-        "javascript": true,
-        "powershell": true,
-        "python": true,
-        "javascriptreact": true
-    },
-
-    // Files
-    "files.exclude": {
-		".git": true,
-		".build": true,
-		".profile-oss": true,
-		"**/.DS_Store": true,
+  // Files
+  "files.exclude": {
+    ".git": true,
+    ".build": true,
+    ".profile-oss": true,
+    "**/.DS_Store": true,
     "**/node_modules": false,
     "**/.next": false,
-		"build/**/*.js": {
-			"when": "$(basename).ts"
-		}
-    },
-    "emmet.preferences": {
-    
-    },
-       // VS Code automatically highlights selected words.
-       // "vim.hlsearch": false,
-    "vim.timeout": 200,
-    "vim.easymotion": true,
-    "vim.incsearch": true,
-    "vim.useSystemClipboard": true,
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.insertModeKeyBindings": [
-      {
-        "before": ["k", "j"],
-        "after": ["<Esc>"]
-      }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-      {
-        "before": ["<leader>", "d"],
-        "after": ["d", "d"]
-      },
-      {
-        "before": ["<C-n>"],
-        "commands": [":nohl"]
-      },
-      {
-        "before": ["K"],
-        "commands": ["lineBreakInsert"],
-        "silent": true
-      }
-    ],
-    "vim.leader": "<space>",
-    "vim.handleKeys": {
-      "<C-a>": false,
-      "<C-f>": false
-    },
+    "build/**/*.js": {
+      "when": "$(basename).ts"
+    }
+  },
 
+  // Editor
+  "editor.fontSize": 15,
+  "editor.tabSize": 2,
+  "editor.fontFamily": "Fira Code Retina",
+  "editor.fontLigatures": true,
+  "editor.cursorStyle": "line",
+  "editor.cursorBlinking": "smooth",
+  "editor.stickyScroll.enabled": true,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.wordWrap": "on",
+  "editor.inlineSuggest.enabled": true,
+  "editor.suggestSelection": "first",
+  "editor.parameterHints.enabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  // Terminal
+  "terminal.integrated.defaultProfile.osx": "bash",
+  "terminal.integrated.fontFamily": "Fira Code Retina",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.fontSize": 15,
+
+  // Emmet
+  "emmet.preferences": {},
+
+  // Git & GitHub
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": true,
+    "markdown": true,
+    "javascript": true,
+    "powershell": true,
+    "python": true,
+    "javascriptreact": true
+  },
+  // VS Code automatically highlights selected words.
+  // "vim.hlsearch": false,
+  "vim.timeout": 200,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  }
 }
