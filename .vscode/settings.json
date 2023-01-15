@@ -52,9 +52,9 @@
 
   // Terminal
   "terminal.integrated.defaultProfile.osx": "bash",
-  "terminal.integrated.fontFamily": "Fira Code Retina",
+  "terminal.integrated.fontFamily": "monospace",
   "terminal.integrated.defaultProfile.linux": "zsh",
-  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontSize": 14,
 
   // Emmet
   "emmet.preferences": {},
