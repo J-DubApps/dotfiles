@@ -1,6 +1,8 @@
 {
   // VSCode
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "window.zoomLevel": -1,
+  "glassit.alpha": 241,
 
   // Security
   "security.workspace.trust.untrustedFiles": "open",
@@ -11,18 +13,23 @@
   "explorer.confirmDelete": false,
 
   // Workbench
-  //"workbench.colorTheme": "Evondev Dracula Darker Contrast",
+  //"workbench.colorTheme": "Dracula",
   "workbench.colorTheme": "Default Dark+",
-  //"workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.tree.indent": 20,
+  "workbench.sideBar.location": "left",
 
   // Files
   "files.exclude": {
     ".git": true,
     ".build": true,
     ".profile-oss": true,
+    "**/CVS": true,
+    "**/.hg": true,
+    "**/.svn": true,
     "**/.DS_Store": true,
     "**/node_modules": false,
+    "**/__pycache__": true,
     "**/.next": false,
     "build/**/*.js": {
       "when": "$(basename).ts"
@@ -58,10 +65,6 @@
 
   // Extensions
   "extensions.autoCheckUpdates": true,
-
-  // Material Icon Theme
-  "material-icon-theme.folders.theme": "specific",
-  "material-icon-theme.folders.color": "#90a4ae",
 
   // Emmet
   "emmet.preferences": {
@@ -139,8 +142,50 @@
   "vscodeGoogleTranslate.preferredLanguage": "English",
 
   // Material Icon Theme
+  "material-icon-theme.folders.theme": "specific",
+  "material-icon-theme.folders.color": "#90a4ae",
+  "material-icon-theme.activeIconPack": "nest",
   "material-icon-theme.folders.associations": {
-    "jest": "test"
+    "jest": "test",
+    "adapters": "contract",
+    "grpc": "pipe",
+    "kube": "kubernetes",
+    "main": "lib",
+    "websockets": "pipe",
+    "implementations": "core",
+    "protos": "pipe",
+    "entities": "class",
+    "kafka": "pipe",
+    "use-cases": "functions",
+    "migrations": "tools",
+    "schemas": "class",
+    "useCases": "functions",
+    "eslint-config": "tools",
+    "typeorm": "database",
+    "_shared": "shared",
+    "mappers": "meta",
+    "fakes": "mock",
+    "modules": "components",
+    "subscribers": "messages",
+    "domain": "class",
+    "protocols": "contract",
+    "infra": "app",
+    "view-models": "views",
+    "presentation": "template",
+    "dtos": "typescript",
+    "http": "container",
+    "providers": "include",
+    "factories": "class",
+    "repositories": "mappings"
+  },
+  "material-icon-theme.files.associations": {
+    "tsconfig.json": "tune",
+    "*.webpack.js": "webpack",
+    "*.proto": "3d",
+    "ormconfig.json": "database"
+  },
+  "material-icon-theme.languages.associations": {
+    "dotenv": "tune"
   },
 
   "npm.keybindingsChangedWarningShown": true,
