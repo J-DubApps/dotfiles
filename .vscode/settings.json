@@ -1,9 +1,25 @@
 {
-
-    "workbench.colorTheme": "Default Dark+",
-    "security.workspace.trust.untrustedFiles": "open",
+ // VSCode
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+ 
     "editor.inlineSuggest.enabled": true,
     "terminal.integrated.defaultProfile.osx": "bash",
+
+  // Security
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // Explorer
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+
+  // Workbench
+  //"workbench.colorTheme": "Evondev Dracula Darker Contrast",
+    "workbench.colorTheme": "Default Dark+",
+  //"workbench.iconTheme": "material-icon-theme",
+  "workbench.tree.indent": 20,
+
+   // Git & GitHub
     "github.copilot.enable": {
         "*": true,
         "yaml": false,
@@ -14,11 +30,15 @@
         "python": true,
         "javascriptreact": true
     },
+
+    // Files
     "files.exclude": {
 		".git": true,
 		".build": true,
 		".profile-oss": true,
 		"**/.DS_Store": true,
+    "**/node_modules": false,
+    "**/.next": false,
 		"build/**/*.js": {
 			"when": "$(basename).ts"
 		}
@@ -60,5 +80,5 @@
       "<C-a>": false,
       "<C-f>": false
     },
-    "explorer.confirmDragAndDrop": false
+
 }
