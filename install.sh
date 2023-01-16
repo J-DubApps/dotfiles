@@ -19,6 +19,7 @@ if [ "$(uname)" == "Darwin" ]; then
     xcode-select --install
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
     brew bundle install
+    brew install --cask visual-studio-code
 else
     # Running on Linux, so do these other things instead
     :
@@ -58,7 +59,7 @@ fi
 # use zsh as default shell
 #sudo chsh -s $(which zsh) $USER
 
-# bundle zsh plugins 
+# bundle zsh plugins
 #antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
 
 # install neovim plugins
@@ -80,3 +81,10 @@ ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/.gitignore_global ~/.gitignore_global
 
+if [ "$(uname)" == "Darwin" ]; then
+    ln -s /Users/julianwest/.dotfiles/.vscode/settings.json /Users/julianwest/Library/Application\ Support/Code/User/settings.json
+    ln -s /Users/julianwest/.dotfiles/.vscode/keybindings.json /Users/julianwest/Library/Application\ Support/Code/User/keybindings.json
+    ln -s /Users/julianwest/.dotfiles/.vscode/snippets/ /Users/julianwest/Library/Application\ Support/Code/User
+else
+
+fi

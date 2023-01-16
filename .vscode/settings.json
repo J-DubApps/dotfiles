@@ -81,7 +81,8 @@
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 118,
   "editor.inlineSuggest.enabled": true,
-  "editor.rulers": [120, 120], // <== editor Guidelines
+  "editor.rulers": [200, 200], // <== editor Guidelines
+  //"editor.rulers": [120, 120], // <== editor Guidelines
   //"editor.rulers": [80, 118],
   "editor.suggestSelection": "first",
   //"editor.suggestSelection": "recentlyUsedByPrefix",
