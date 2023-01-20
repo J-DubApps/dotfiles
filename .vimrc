@@ -14,7 +14,7 @@ silent! call pathogen  # runtime_append_all_bundles()
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
 
-runtime plugin/matchit.vim        " Load the matchit plugin.
+runtime macros/matchit.vim        " Load the matchit plugin.
 
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in .
@@ -56,7 +56,7 @@ set laststatus = 2                  " Show the status line all the time
 set statusline = [ % n]\ % <%.99f\ % h%w%m%r%y\ % {fugitive  # statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
 " Or use vividchalk
-" colorscheme topfunky-light
+colorscheme topfunky-light
 
 " Tab mappings.
 map < leader > tt: tabnew < cr >
