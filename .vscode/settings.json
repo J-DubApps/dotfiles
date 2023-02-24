@@ -300,5 +300,6 @@
   "vim.handleKeys": {
     "<C-a>": false,
     "<C-f>": false
-  }
+  },
+  "keyboard.touchbar.enabled": false
 }
