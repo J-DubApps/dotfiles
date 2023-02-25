@@ -85,7 +85,7 @@ export NVM_DIR="$HOME/.nvm"
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git web-search zsh-autosuggestions zsh-syntax-highlighting)
 
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
