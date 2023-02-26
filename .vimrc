@@ -69,6 +69,17 @@ map < leader > tf: tabfirst < cr >
 map < leader > tl: tablast < cr >
 map < leader > tm: tabmove
 
+" Using arrow keys is far too ingrained in my muscle memory
+" This is to force my hand 
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+
 " Uncomment to use Jamis Buck's file opening plugin
 "map < Leader > t: FuzzyFinderTextMate < Enter >
 
