@@ -191,7 +191,8 @@
   },
 
   "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnType": true
   },
 
   "[dockerfile]": {
@@ -299,6 +300,7 @@
   "vim.leader": "<space>",
   "vim.handleKeys": {
     "<C-a>": false,
-    "<C-f>": false
-  }
+    "<C-f>": true
+  },
+  "editor.accessibilitySupport": "off"
 }
