@@ -9,6 +9,8 @@
 
 set nocompatible                  " Must come first because it changes other options.
 
+"set termguicolors                 " Enable 24-bit RGB colors.
+
 silent! call pathogen  # runtime_append_all_bundles()
 
 syntax enable                    " Turn on syntax highlighting.
@@ -70,7 +72,7 @@ map < leader > tl: tablast < cr >
 map < leader > tm: tabmove
 
 " Using arrow keys is far too ingrained in my muscle memory
-" This is to force my hand 
+" This is to force my hand
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
