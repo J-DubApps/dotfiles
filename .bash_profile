@@ -21,7 +21,7 @@ export PS1="\u@\h \W\[\033[01;33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 export PATH="/Users/julianwest/homebrew/bin:/Users/julianwest/homebrew/Cellar/openvpn/2.5.5/sbin/openvpn:$PATH"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-
+export PATH="$PATH:/Users/julianwest/.local/bin"
 # Get aliases and functions from .bashrc
 [ -f $HOME/.bashrc ] && source $HOME/.bashrc
 # . "$HOME/.cargo/env"

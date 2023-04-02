@@ -37,7 +37,7 @@
   "workbench.fontAliasing": "auto",
 
   // Files
-  "files.autoSave": "afterDelay",
+  "files.autoSave": "off",
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
@@ -304,5 +304,15 @@
   "keyboard.touchbar.enabled": false,
   "vim.neovimPath": "/opt/homebrew/bin/nvim",
   "vim.neovimUseConfigFile": true,
-  "vim.neovimConfigPath": "~/.config/nvim/init.lua"
+  "vim.neovimConfigPath": "~/.config/nvim/init.lua",
+  "chatgpt.gpt3.apiKey": "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",
+  "[powershell]": {
+    "editor.defaultFormatter": "ms-vscode.powershell"
+  },
+  "alt-editor.args": "",
+  "genieai.openai.organization": "org-019n3QWaTDyRQO29kRhSQDna",
+  "sourcegraph.accessToken": "sgp_b457366d5dcb4091a306dd8f8877d6550b89d0c7",
+  "sourcegraph.url": "https://sourcegraph.com",
+  "sourcegraph.defaultBranch": "",
+  "genieai.response.showNotification": true
 }
