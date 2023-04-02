@@ -305,12 +305,12 @@
   "vim.neovimPath": "/opt/homebrew/bin/nvim",
   "vim.neovimUseConfigFile": true,
   "vim.neovimConfigPath": "~/.config/nvim/init.lua",
-  "chatgpt.gpt3.apiKey": "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",
+  "chatgpt.gpt3.apiKey": "",
   "[powershell]": {
     "editor.defaultFormatter": "ms-vscode.powershell"
   },
   "alt-editor.args": "",
-  "genieai.openai.organization": "org-019n3QWaTDyRQO29kRhSQDna",
+  "genieai.openai.organization": "org-0",
   "sourcegraph.accessToken": "sgp_b457366d5dcb4091a306dd8f8877d6550b89d0c7",
   "sourcegraph.url": "https://sourcegraph.com",
   "sourcegraph.defaultBranch": "",
