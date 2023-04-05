@@ -1,1 +1,2 @@
 # ~/.bash_login
+. "$HOME/.cargo/env"
