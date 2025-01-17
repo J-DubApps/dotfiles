@@ -1,0 +1,207 @@
+# Custom Replacements
+name: customreplacements
+package_author: Julian West <jdubwritecode@gmail.com>
+parent: default
+matches:
+#:mdtag is used to quickly create a tag notation for Zettlekasten in code blocks.
+  - trigger: ":mdtag"
+    replace: "`#$|$`  "
+
+#:t is a short version of mdtag
+  - trigger: ":tag"
+    replace: "`#$|$`  "
+
+#change mgmt items
+
+  - trigger: ":gpo-stamp"
+    replace: "{{date}}"
+    vars:
+    - name: date
+      type: date
+      params:
+        format: "-- SET BY J. West on %m/%d/%y - %H:%M"
+
+#fun stuff
+  - trigger: ":dance"
+    replace: "`ᕕ(⌐■_■)ᕗ ♪♬`"
+
+  - trigger: ":flip"
+    replace: "`(╯°□°）╯︵ ┻━┻`"
+
+  - trigger: ":nice"
+    replace: "𝓷𝓲𝓬𝓮 ☜(ﾟヮﾟ☜)"
+
+  - trigger: ":dwi"
+    replace: "(⌐■_■)"
+
+  - trigger: ":hg"
+    replace: "ᕕ( ᐛ )ᕗ"
+
+  - trigger: ":eh"
+    replace: "‽"
+
+  - trigger: ":loading"
+    replace: "███▒▒▒▒▒▒▒"
+
+  - trigger: ":lol"
+    replace: "L(° O °L)"
+
+  - trigger: ":nerd"
+    replace: "(⌐⊙_⊙)"
+
+  - trigger: ":nuke"
+    replace: "☢"
+
+  - trigger: ":smile"
+    replace: "ツ"
+
+  - trigger: ":smirk"
+    replace: "¬‿¬"
+
+  - trigger: ":this"
+    replace: "( ͡° ͜ʖ ͡°)_/¯"
+
+  - trigger: ":derp"
+    replace: "☉ ‿ ⚆"
+
+  - trigger: ":cloud"
+    replace: "☁"
+
+  - trigger: ":crayon"
+    replace: "''((̲̅ ̲̅(̲̅C̲̅r̲̅a̲̅y̲̅o̲̅l̲̲̅̅a̲̅( ̲̅((>''"
+
+  - trigger: ":boombox"
+    replace: "''♫♪.ılılıll|̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅|llılılı.♫♪''"
+
+  - trigger: ":coffee"
+    replace: "'c[_]''"
+
+  - trigger: ":cassette"
+    replace: "|[●▪▪●]|"
+
+  - trigger: ":robot"
+    replace: "'c[○┬●]כ'"
+
+  - trigger: ":loveeyes"
+    replace: "(♥_♥)"
+
+  - trigger: ":happybirthday"
+    replace: "ዞᏜ℘℘Ꮍ ℬℹℛʈዞᗬᏜᎽ"
+
+  - trigger: ":bs"
+    replace: "|3ᵕᶦᶦᶳᶣᶨᶵ"
+
+  - trigger: ":happysquare"
+    replace: "【ツ】"
+
+  - trigger: ":plane"
+    replace: "✈"
+
+  - trigger: ":punch"
+    replace: "O=('-'Q)"
+
+  - trigger: ":what"
+    replace: "ლ(ಠ益ಠლ)╯"
+
+  - trigger: ":seewhatyoudid"
+    replace: "☚ (<‿<)☚"
+
+  - trigger: ":fancylol"
+    replace: "[]_ ([]) []_"
+
+  - trigger: ":omgwhat"
+    replace: "◕_◕"
+
+  - trigger: ":squid"
+    replace: "くコ:彡"
+
+  - trigger: ":yolo"
+    replace: "Yᵒᵘ Oᶰˡʸ Lᶤᵛᵉ Oᶰᶜᵉ"
+
+  - trigger: ":911"
+    replace: "✈__✈ █ █ ▄ "
+
+  - trigger: ":wfh"
+    replace: "🏠 ωοяκιηg ƒяοм нοмε"
+
+  - trigger: ":m1"
+    replace: ",.-~*´¨¯¨`*·~-.¸-($|$)-,.-~*´¨¯¨`*·~-.¸"
+
+  - trigger: ":m2"
+    replace: "(¯`·._.·(¯`·._.· $|$ ·._.·´¯)·._.·´¯)"
+
+  - trigger: ":m3"
+    replace: "(¯`·._.··¸.-~*´¨¯¨`*·~-.,-($|$)-,.-~*´¨¯¨`*·~-.¸··._.·´¯)"
+
+  - trigger: ":m4"
+    replace: "(¯`·._.·(¯`·._.·(¯`·._.· $|$ ·._.·´¯)·._.·´¯)·._.·´¯)"
+
+#new note template for your Zettlekasten
+  - trigger: ":nn"
+    replace: "# Title\n{{date}}\n## Tags\n\n## Links \n\n### ID\n{{id}}"
+    vars:
+      - name: date
+        type: match
+        params:
+          trigger: ":date"
+      - name: id
+        type: match
+        params:
+          trigger: ":id"
+
+  - trigger: ":nz"
+    replace: "---\nid: {{id}}\ntitle: $|$\ndate: {{date}}\ntags: []\nlinks: [[]]\n---\n"
+    vars:
+      - name: date
+        type: match
+        params:
+          trigger: ":date"
+      - name: id
+        type: match
+        params:
+          trigger: ":id"
+
+#time in 0H:0M notation
+  - trigger: ":now"
+    replace: "{{time}}  "
+    vars:
+      - name: time
+        type: date
+        params:
+          format: "%l:%M %p"
+
+#id creates a timestamp for unique ids in notes like Zettlr - handy for other apps that don't include that functionality
+  - trigger: ":id"
+    replace: "{{time}}  "
+    vars:
+      - name: time
+        type: date
+        params:
+          format: "%Y%m%d%H%M%S"
+
+#cf creates a code fence - enclosed three `'s
+  - trigger: ":cf"
+    replace: "```\n$|$\n```"
+
+    # Breadcrumb
+  - trigger: ":bc"
+    word: true
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "echo `date -v -1d \"+[[%Y-%m-%d|<< Yesterday]]\"`' | '`date -v +1d \"+[[%Y-%m-%d|Tommorrow >>]]\"`"
+
+# Meeting
+  - trigger: ":meet"
+    word: true
+    replace: |
+             ## 0000 Meeting
+             - Tags:
+             Meeting Link:
+             Attendees:
+             Tasks:
+             Notes:
+
+ 
